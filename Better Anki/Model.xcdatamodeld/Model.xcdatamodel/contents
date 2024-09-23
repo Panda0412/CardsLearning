@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22225" systemVersion="23B81" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Card" representedClassName="Card" syncable="YES" codeGenerationType="class">
+        <attribute name="backText_" attributeType="String"/>
+        <attribute name="factor_" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="frontText_" attributeType="String"/>
+        <attribute name="nextShowTime_" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="prevInterval_" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="deck" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Deck" inverseName="cards" inverseEntity="Deck"/>
+        <relationship name="grades" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Grade" inverseName="card" inverseEntity="Grade"/>
+    </entity>
+    <entity name="Deck" representedClassName="Deck" syncable="YES" codeGenerationType="class">
+        <attribute name="name_" attributeType="String"/>
+        <relationship name="cards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Card" inverseName="deck" inverseEntity="Card"/>
+    </entity>
+    <entity name="Grade" representedClassName="Grade" syncable="YES" codeGenerationType="class">
+        <attribute name="timestamp_" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="value_" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="card" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Card" inverseName="grades" inverseEntity="Card"/>
+    </entity>
+</model>
