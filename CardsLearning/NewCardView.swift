@@ -1,26 +1,33 @@
 //
-//  NewDeckView.swift
-//  Better Anki
+//  NewCardView.swift
+//  CardsLearning
 //
 //  Created by Anastasiia Bugaeva on 21.08.2024.
 //
 
 import SwiftUI
 
-struct NewDeckView: View {
+struct NewCardView: View {
     enum FocusedField {
-        case deckName
+        case frontText, backText
     }
-    
+
     @EnvironmentObject var manager: DataManager
     @Environment(\.managedObjectContext) private var viewContext
-    @State private var deckName: String = ""
+    var deck: Deck
     @FocusState private var focusedField: FocusedField?
+    @State private var frontText: String = ""
+    @State private var backText: String = ""
     @Environment(\.dismiss) private var dismiss
-    
+
     private func addItem() {
-        let newDeck = Deck(context: viewContext)
-        newDeck.name_ = self.deckName
+        let newCard = Card(context: viewContext)
+        newCard.frontText_ = self.frontText
+        newCard.backText_ = self.backText
+        newCard.nextShowTime_ = .now
+        newCard.prevInterval_ = .zero
+        newCard.factor_ = 1300
+        newCard.deck = self.deck
         do {
             try viewContext.save()
         } catch(let err) {
@@ -30,8 +37,8 @@ struct NewDeckView: View {
     }
     var body: some View {
         NavigationStack {
-            VStack(spacing: 25) {
-                TextField("Deck Name", text: $deckName)
+            VStack(alignment: .leading) {
+                TextField("👀 Front", text: $frontText)
                     .padding()
                     .overlay(
                         RoundedRectangle(cornerRadius: 6)
@@ -39,12 +46,29 @@ struct NewDeckView: View {
                     )
                     .clipShape(RoundedRectangle(cornerRadius: 6))
                     .padding(.top, 50)
-                    .focused($focusedField, equals: .deckName)
+                    .focused($focusedField, equals: .frontText)
+                Text("You will see")
+                    .foregroundStyle(.secondary)
+                    .font(.caption)
+                    .padding(.bottom, 25)
+
+                TextField("🤔 Back", text: $backText)
+                    .padding()
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 6)
+                            .stroke(.primary, lineWidth: 1)
+                    )
+                    .clipShape(RoundedRectangle(cornerRadius: 6))
+                    .focused($focusedField, equals: .backText)
+                Text("You will need to guess")
+                    .foregroundStyle(.secondary)
+                    .font(.caption)
+                    .padding(.bottom, 25)
 
                 Button {
                     addItem()
                 } label: {
-                    Text("Create")
+                    Text("Add")
                         .tint(.primary)
                 }
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
@@ -57,7 +81,7 @@ struct NewDeckView: View {
             }
             .padding(.horizontal, 30)
             .padding(.bottom, 40)
-            .navigationTitle("New Deck")
+            .navigationTitle("New Card")
             .toolbarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
@@ -72,11 +96,11 @@ struct NewDeckView: View {
             }
         }
         .onAppear {
-            focusedField = .deckName
+            focusedField = .frontText
         }
     }
 }
 
 #Preview {
-    NewDeckView()
+    NewCardView(deck: Deck())
 }

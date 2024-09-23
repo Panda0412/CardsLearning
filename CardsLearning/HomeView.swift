@@ -1,6 +1,6 @@
 //
 //  HomeView.swift
-//  Better Anki
+//  CardsLearning
 //
 //  Created by Anastasiia Bugaeva on 20.08.2024.
 //

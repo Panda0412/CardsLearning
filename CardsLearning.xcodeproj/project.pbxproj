@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD0889A82C3AD11A007F5ACC /* Better_AnkiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0889A72C3AD11A007F5ACC /* Better_AnkiApp.swift */; };
+		CD0889A82C3AD11A007F5ACC /* CardsLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0889A72C3AD11A007F5ACC /* CardsLearningApp.swift */; };
 		CD0889AA2C3AD11A007F5ACC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0889A92C3AD11A007F5ACC /* ContentView.swift */; };
 		CD0889AC2C3AD11B007F5ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0889AB2C3AD11B007F5ACC /* Assets.xcassets */; };
 		CD0889AF2C3AD11B007F5ACC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0889AE2C3AD11B007F5ACC /* Preview Assets.xcassets */; };
@@ -22,8 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CD0889A42C3AD11A007F5ACC /* Better Anki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Better Anki.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD0889A72C3AD11A007F5ACC /* Better_AnkiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Better_AnkiApp.swift; sourceTree = "<group>"; };
+		CD0889A42C3AD11A007F5ACC /* CardsLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardsLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0889A72C3AD11A007F5ACC /* CardsLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsLearningApp.swift; sourceTree = "<group>"; };
 		CD0889A92C3AD11A007F5ACC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD0889AB2C3AD11B007F5ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD0889AE2C3AD11B007F5ACC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		CD08899B2C3AD11A007F5ACC = {
 			isa = PBXGroup;
 			children = (
-				CD0889A62C3AD11A007F5ACC /* Better Anki */,
+				CD0889A62C3AD11A007F5ACC /* CardsLearning */,
 				CD0889A52C3AD11A007F5ACC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,15 +59,15 @@
 		CD0889A52C3AD11A007F5ACC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD0889A42C3AD11A007F5ACC /* Better Anki.app */,
+				CD0889A42C3AD11A007F5ACC /* CardsLearning.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CD0889A62C3AD11A007F5ACC /* Better Anki */ = {
+		CD0889A62C3AD11A007F5ACC /* CardsLearning */ = {
 			isa = PBXGroup;
 			children = (
-				CD0889A72C3AD11A007F5ACC /* Better_AnkiApp.swift */,
+				CD0889A72C3AD11A007F5ACC /* CardsLearningApp.swift */,
 				CD0889A92C3AD11A007F5ACC /* ContentView.swift */,
 				CDA51ACA2C752B0C00B48A91 /* DeskView.swift */,
 				CDA51ACC2C7534B300B48A91 /* CardView.swift */,
@@ -80,7 +80,7 @@
 				CD0889AD2C3AD11B007F5ACC /* Preview Content */,
 				CD1C076C2C84C300007D05DC /* SM2Engine.swift */,
 			);
-			path = "Better Anki";
+			path = CardsLearning;
 			sourceTree = "<group>";
 		};
 		CD0889AD2C3AD11B007F5ACC /* Preview Content */ = {
@@ -94,9 +94,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CD0889A32C3AD11A007F5ACC /* Better Anki */ = {
+		CD0889A32C3AD11A007F5ACC /* CardsLearning */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD0889B22C3AD11B007F5ACC /* Build configuration list for PBXNativeTarget "Better Anki" */;
+			buildConfigurationList = CD0889B22C3AD11B007F5ACC /* Build configuration list for PBXNativeTarget "CardsLearning" */;
 			buildPhases = (
 				CD0889A02C3AD11A007F5ACC /* Sources */,
 				CD0889A12C3AD11A007F5ACC /* Frameworks */,
@@ -106,9 +106,9 @@
 			);
 			dependencies = (
 			);
-			name = "Better Anki";
+			name = CardsLearning;
 			productName = "Better Anki";
-			productReference = CD0889A42C3AD11A007F5ACC /* Better Anki.app */;
+			productReference = CD0889A42C3AD11A007F5ACC /* CardsLearning.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,7 +126,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CD08899F2C3AD11A007F5ACC /* Build configuration list for PBXProject "Better Anki" */;
+			buildConfigurationList = CD08899F2C3AD11A007F5ACC /* Build configuration list for PBXProject "CardsLearning" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,7 +141,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD0889A32C3AD11A007F5ACC /* Better Anki */,
+				CD0889A32C3AD11A007F5ACC /* CardsLearning */,
 			);
 		};
 /* End PBXProject section */
@@ -166,7 +166,7 @@
 				CD1C076D2C84C300007D05DC /* SM2Engine.swift in Sources */,
 				CDA51ACF2C754D5800B48A91 /* NewDeskView.swift in Sources */,
 				CD0889AA2C3AD11A007F5ACC /* ContentView.swift in Sources */,
-				CD0889A82C3AD11A007F5ACC /* Better_AnkiApp.swift in Sources */,
+				CD0889A82C3AD11A007F5ACC /* CardsLearningApp.swift in Sources */,
 				CDA51ACB2C752B0C00B48A91 /* DeskView.swift in Sources */,
 				CDA51AD72C778D0100B48A91 /* Model.xcdatamodeld in Sources */,
 				CDA51AC92C75232100B48A91 /* HomeView.swift in Sources */,
@@ -305,7 +305,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Better Anki/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CardsLearning/Preview Content\"";
 				DEVELOPMENT_TEAM = 5L2PK7Z938;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -319,7 +319,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.panda.Better-Anki";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panda.CardsLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -334,7 +334,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Better Anki/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CardsLearning/Preview Content\"";
 				DEVELOPMENT_TEAM = 5L2PK7Z938;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -348,7 +348,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.panda.Better-Anki";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panda.CardsLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -359,7 +359,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CD08899F2C3AD11A007F5ACC /* Build configuration list for PBXProject "Better Anki" */ = {
+		CD08899F2C3AD11A007F5ACC /* Build configuration list for PBXProject "CardsLearning" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD0889B02C3AD11B007F5ACC /* Debug */,
@@ -368,7 +368,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD0889B22C3AD11B007F5ACC /* Build configuration list for PBXNativeTarget "Better Anki" */ = {
+		CD0889B22C3AD11B007F5ACC /* Build configuration list for PBXNativeTarget "CardsLearning" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD0889B32C3AD11B007F5ACC /* Debug */,

@@ -1,6 +1,6 @@
 //
 //  SM2Engine.swift
-//  Better Anki
+//  CardsLearning
 //
 //  Created by Anastasiia Bugaeva on 01.09.2024.
 //

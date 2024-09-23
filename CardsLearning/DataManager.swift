@@ -1,6 +1,6 @@
 //
 //  DataManager.swift
-//  Better Anki
+//  CardsLearning
 //
 //  Created by Anastasiia Bugaeva on 22.08.2024.
 //
